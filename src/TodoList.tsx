@@ -14,8 +14,8 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onDelete }) => {
                 {todos.map(todo => {
                     return (
                         <div key={todo.id} className="flex-container">
-                                <span>{todo.text}</span>
-                                <button className="comp-btn" onClick={() => onDelete(todo.id)}>complete</button>
+                            <span>{todo.text}</span>
+                            <button className="comp-btn" onClick={() => onDelete(todo.id)}>complete</button>
                         </div>        
                     )
                 })}

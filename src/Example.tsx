@@ -4,7 +4,7 @@ import Todo from "./Todo";
 const Example: React.FC = () => {
     return (
         <>
-            <Todo/>
+          <Todo/>
         </>
     )
 }

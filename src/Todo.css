@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    
+}
+
+.inner-container {
+    width: 584px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+.parent {
+    margin-top: 64px;
+}
+.flex-container {
+    display: flex;
+    height: 48px;
+    align-items: center;  
+}
+
+
+input {
+    width: 480px;
+    height: 40px;
+    background-color: #ccc;
+    /* margin-left: 96px; */
+    margin-top: 40px;
+    color: black;
+    font-size: 24px;
+}
+
+.task-btn {
+    width: 72px;
+    height: 40px;
+    margin-left: 32px;
+    margin-top: 40px;
+}
+.comp-btn {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+
+/* .todo-list {
+    position: absolute;
+    bottom: 20%;
+} */
+
+span {
+    list-style-type: none;
+    font-size: 32px;
+    color: darkorange;
+    width: 400px;
+}
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:darkorange;
+}

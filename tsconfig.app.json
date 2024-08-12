@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // JavaScript のバージョン
+    "lib": ["ES2020", "DOM"], // 使用するライブラリ
+    "module": "ESNext", // モジュールシステム
+    "moduleResolution": "node", // モジュール解決のための設定
+    "outDir": "build", // コンパイル結果の出力先ディレクトリ
+    "rootDir": "src", // ソースコードのルートディレクトリ
+    "strict": true, // 厳密な型チェックを有効にする
+    "noImplicitAny": true, // any 型の暗黙的な使用を禁止する
+    "skipLibCheck": true, // 型定義ファイルの型チェックをスキップする
+    "esModuleInterop": true, // ES モジュールと CommonJS モジュールの互換性を提供する
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字と小文字の一貫性を強制する
+    "jsx": "react-jsx", // JSX の変換オプション
+    "noEmit": false // コンパイル結果を出力する
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"], // コンパイル対象のファイル
+  "exclude": ["node_modules", "build"] // コンパイル対象外のファイル
+}

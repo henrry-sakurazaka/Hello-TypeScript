@@ -1,0 +1,30 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "lib": ["es2017", "dom"],
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+
+

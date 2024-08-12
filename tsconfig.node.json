@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Node.js で動作する JavaScript のバージョン
+    "lib": ["ES2020"], // 使用するライブラリ
+    "module": "commonjs", // Node.js 用のモジュールシステム
+    "moduleResolution": "node", // モジュール解決のための設定
+    "outDir": "lib", // コンパイル結果の出力先ディレクトリ
+    "rootDir": "src", // ソースコードのルートディレクトリ
+    "strict": true, // 厳密な型チェックを有効にする
+    "noImplicitAny": true, // any 型の暗黙的な使用を禁止する
+    "skipLibCheck": true, // 型定義ファイルの型チェックをスキップする
+    "esModuleInterop": true, // ES モジュールと CommonJS モジュールの互換性を提供する
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字と小文字の一貫性を強制する
+    "noEmit": false, // コンパイル結果を出力する
+    "isolatedModules": true // 各ファイルを独立したモジュールとして扱う
+  },
+  "include": ["src/**/*.ts"], // コンパイル対象のファイル
+  "exclude": ["node_modules"] // コンパイル対象外のファイル
+}

@@ -22,7 +22,8 @@ const Todo: React.FC = () => {
         setInputText(e.target.value);
     }
 
-    const addTask = () => {
+    const addTask = (e) => {
+        e.preventDefault();
         if (inputText.trim() === '') return; // 空のタスクは追加しない
         const newId = todos.length > 0 ? Math.max(...todos.map(todo => todo.id)) + 1 : 0;
         setTodos([...todos, { id: newId, text: inputText }]);
@@ -45,7 +46,7 @@ const Todo: React.FC = () => {
                            
                     </div>
                 </div>
-                    <form className="form-container" action="#">
+                    <form className="form-container" onSubmit={addTask}>
                         <input type="text" value={inputText} onChange={createTask}/>
                         <button className="task-btn" onClick={addTask}>Add</button>
                     </form>

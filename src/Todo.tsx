@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TodoList from "./TodoList";
 import './Todo.css';
 
@@ -36,17 +36,19 @@ const Todo: React.FC = () => {
     return (
         <div className="container">
             <div className="inner-container">
-                <div className="title">
-                    <h1>Hello TypeScript</h1>
-                        <p>Hello, and thank you for visiting. This app is a simple Todo app built
-                           with TypeScript. You can check the code details via the link to GitHub.</p>
-                        <a href="https://github.com/henrry-sakurazaka/Hello-TypeScript/tree/main/src">https://github.com/henrry-sakurazaka/Hello-TypeScript</a> 
-                        <p>Let me know if you need any further assistance!</p>
+                <div className="border-container">
+                    <div className="title">
+                        <h1>Hello TypeScript</h1>
+                            <p>Hello, and thank you for visiting. This app is a simple Todo app built
+                            with TypeScript. You can check the code details via the link to GitHub</p>
+                            <a href="https://github.com/henrry-sakurazaka/Hello-TypeScript/tree/main/src">https://github.com/henrry-sakurazaka/Hello-TypeScript</a> 
+                           
+                    </div>
                 </div>
-                    <div className="form-container">
+                    <form className="form-container" action="#">
                         <input type="text" value={inputText} onChange={createTask}/>
                         <button className="task-btn" onClick={addTask}>Add</button>
-                    </div>
+                    </form>
                 <div className="todo-list">
                     <TodoList  todos={todos} onDelete={deleteTask}/>
                 </div>

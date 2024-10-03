@@ -10,6 +10,10 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["@playwright/test"],// Playwrightの型定義を追加
     "jsx": "react",
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "noEmit": true // または "emitDeclarationOnly": true
+    
   },
   "include": ["src/**/*.ts", "tests/**/*.ts", "src/**/*.tsx", "tests/**/*.tsx"],  
   "exclude": ["node_modules", "lib", "dist"]

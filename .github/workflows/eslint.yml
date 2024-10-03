@@ -24,7 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-    
-     # ESLintを eslint.config.mjs ファイルで実行
+      # ESLintを eslint.config.js ファイルで実行
       - name: Run ESLint with auto-fix
         run: npx eslint -c eslint.config.js . --fix

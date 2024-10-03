@@ -5,7 +5,7 @@ import globals from 'globals';
 import pluginReact from 'eslint-plugin-react'; // Reactプラグイン
 import tsPlugin from '@typescript-eslint/eslint-plugin'; // typescript-eslintのインポート
 import pluginPrettier from "eslint-plugin-prettier";
-import eslintConfigPrettier from "eslint-config-prettier";
+
 
 
 const __dirname = dirname(fileURLToPath(import.meta.url)); // __dirnameを設定
@@ -82,5 +82,5 @@ export default [
       prettier: pluginPrettier,
     },
   },
-  eslintConfigPrettier,
+  
 ];

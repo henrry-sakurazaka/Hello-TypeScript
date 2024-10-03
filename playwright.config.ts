@@ -1,9 +1,9 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-    testDir: './tests',  // テストファイルのディレクトリ
-    timeout: 30000,  // テストのタイムアウト時間
-    retries: 1,  // テストのリトライ回数
+    testDir: './tests',  
+    timeout: 30000,  
+    retries: 1,  
     use: {
       headless: true,  // ヘッドレスモードで実行（表示なし）
       viewport: { width: 1280, height: 720 },  // ビューポートの設定

@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest",
-     "test:e2e": "playwright test"
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "firebase-admin": "^12.3.1",

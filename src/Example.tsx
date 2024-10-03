@@ -1,12 +1,12 @@
-import React from "react";
-import Todo from "./Todo";
+import React from 'react';
+import Todo from './Todo';
 
 const Example: React.FC = () => {
-    return (
-        <>
-          <Todo/>
-        </>
-    )
-}
+  return (
+    <>
+      <Todo />
+    </>
+  );
+};
 
 export default Example;

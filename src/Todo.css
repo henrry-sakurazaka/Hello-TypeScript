@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 .container {
-    /* max-width: 1970px; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -41,7 +40,6 @@ input {
     width: 480px;
     height: 40px;
     background-color: #ccc;
-    /* margin-left: 96px; */
     margin-top: 40px;
     color: black;
     font-size: 24px;

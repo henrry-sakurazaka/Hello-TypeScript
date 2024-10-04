@@ -1,4 +1,4 @@
-name: ESLint Check
+name: ESLint Check and Test
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       # ESLintを eslint.config.js ファイルで実行
       - name: Run ESLint with auto-fix
         run: npx eslint -c eslint.config.js . --fix
-jobs:
+
   test:
     runs-on: ubuntu-latest
 
@@ -43,6 +43,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # ESLintを eslint.config.js ファイルで実行
-      - name: Run ESLint with auto-fix
-        run: npx eslint -c eslint.config.js . --fix
+      # テストを実行
+      - name: Run tests
+        run: npm run test

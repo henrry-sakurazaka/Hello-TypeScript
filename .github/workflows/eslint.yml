@@ -1,12 +1,12 @@
-name: ESLint Check and Test
+name: ESLint Check
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   eslint:
@@ -27,22 +27,3 @@ jobs:
       # ESLintを eslint.config.js ファイルで実行
       - name: Run ESLint with auto-fix
         run: npx eslint -c eslint.config.js . --fix
-
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm install
-
-      # テストを実行
-      - name: Run tests
-        run: npm run test

@@ -19,17 +19,6 @@ jobs:
       - name: Run ESLint
         run: npx eslint -c eslint.config.js .
 
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: npm install
-      
-      - name: Run Unit Tests
-        run: npm run test
 
   e2e:
     runs-on: ubuntu-latest

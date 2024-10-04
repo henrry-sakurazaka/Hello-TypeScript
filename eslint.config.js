@@ -60,7 +60,7 @@ export default [
       },
     },
     rules: {
-      'no-unused-vars': 'off',  // 未使用変数エラー無効化
+      'no-unused-vars': 'off',  
       '@typescript-eslint/no-unused-vars': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
       'no-prototype-builtins': 'off',
@@ -69,9 +69,9 @@ export default [
       'no-console': 'off',
       "no-undef": 'off',
       "indent": 'off',
-      "no-empty": 'off',  // 追加
-      "no-func-assign": 'off',  // 追加
-      '@typescript-eslint/no-require-imports': 'off',  // require禁止エラー対応
+      "no-empty": 'off',  
+      "no-func-assign": 'off', 
+      '@typescript-eslint/no-require-imports': 'off',  
       "space-in-parens": 'off',
       "no-multi-spaces": 'off',
       "prettier/prettier": "error",

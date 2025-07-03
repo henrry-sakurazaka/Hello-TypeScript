@@ -30,7 +30,7 @@ const Todo = () => {
     setInputText('');
   };
 
-  const deleteTask: (id: number) => void = (id) => {
+  const deleteTask: (id: string | number ) => void = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 

@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import React from 'react';
-import Example from './Example'
+import Example from './Example';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -30,9 +30,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <Example/>
+      <Example />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

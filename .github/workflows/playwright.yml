@@ -22,11 +22,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install -D @playwright/test@latest
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Run E2E Tests
         run: npm run test:e2e # Playwright E2Eテストを実行
-       

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import TodoList from './TodoList';
 import './Todo.css';
+import { v4 as uuidv4 } from 'uuid';
 
 export interface Todo {
-  id: number;
+  id: string | number;
   text: string;
 }
 
@@ -22,13 +23,14 @@ const Todo = () => {
   const addTask = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (inputText.trim() === '') return; // 空のタスクは追加しない
-    const newId =
-      todos.length > 0 ? Math.max(...todos.map((todo) => todo.id)) + 1 : 0;
-    setTodos([...todos, { id: newId, text: inputText }]);
+    const newId2 = uuidv4();
+    // const newId =
+    //   todos.length > 0 ? Math.max(...todos.map((todo) => todo.id)) + 1 : 0;
+    setTodos([...todos, { id: newId2, text: inputText }]);
     setInputText('');
   };
 
-  const deleteTask: (id: number) => void = (id) => {
+  const deleteTask: (id: string | number) => void = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 

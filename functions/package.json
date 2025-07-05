@@ -9,11 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2017",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "noImplicitAny": false,
     "sourceMap": true,
     "outDir": "lib",
@@ -23,8 +25,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
-
-

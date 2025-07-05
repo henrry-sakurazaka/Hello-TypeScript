@@ -1,8 +1,29 @@
-<<<<<<< HEAD
 # Hello-TypeScript
+
 簡易的なTodoアプリをTypeScriptで作成してみました。
-=======
+
 # React + TypeScript + Vite
+
+> 公開中: https://hello-typescript-8a1d9.web.app
+
+## 🔍 概要
+
+Reactライブラリを使用し、ユーザーのタスク管理を支援するToDoアプリを作成しました。
+あくまでTypeScriptの学習のための成果物だったので学習に集中するため、データベース、インフラ、サーバーは制作しませんでした。
+
+## 🛠️ 使用技術
+
+| 種別           | 技術スタック   | 選定理由                                                          |
+| -------------- | -------------- | ----------------------------------------------------------------- | --- |
+| フレームワーク | React / Vite   | コンポーネント指向で開発しやすく、Viteにより高速な開発体験を実現  |     |
+| ビルドツール   | Vite           | 高速なビルドとHMR（Hot Module Replacement）による効率的な開発環境 |
+| Linter         | ESLint         | コードの一貫性とバグの早期発見を促進するため                      |
+| フォーマッター | Prettier       | チームでのフォーマット統一とコードレビュー効率化のため            |
+| CI/CD          | GitHub Actions | GitHubと統合しやすく、テスト・デプロイ自動化の導入が容易なため    |
+
+- スクリーンショットやGIF（UI紹介）
+
+![UI紹介](./public/Hello-TypeScript.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -26,7 +47,7 @@ export default tseslint.config({
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -35,7 +56,7 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from 'eslint-plugin-react';
 
 export default tseslint.config({
   // Set the react version
@@ -50,6 +71,7 @@ export default tseslint.config({
     ...react.configs.recommended.rules,
     ...react.configs['jsx-runtime'].rules,
   },
-})
+});
 ```
->>>>>>> f7cc70a (Initial commit)
+
+> > > > > > > f7cc70a (Initial commit)

@@ -3,7 +3,7 @@ import type { Todo } from './Todo';
 
 interface TodoListProps {
   todos: Todo[];
-  onDelete: (id: string | number ) => void;
+  onDelete: (id: string | number) => void;
 }
 
 const TodoList = ({ todos, onDelete }: TodoListProps) => {

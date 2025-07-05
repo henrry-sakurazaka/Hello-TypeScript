@@ -29,4 +29,3 @@ jobs:
 
       - name: Run E2E Tests
         run: npm run test:e2e # Playwright E2Eテストを実行
-       

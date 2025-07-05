@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TodoList from './TodoList';
 import './Todo.css';
-import {v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 export interface Todo {
   id: string | number;
@@ -30,7 +30,7 @@ const Todo = () => {
     setInputText('');
   };
 
-  const deleteTask: (id: string | number ) => void = (id) => {
+  const deleteTask: (id: string | number) => void = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 

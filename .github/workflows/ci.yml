@@ -12,13 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       - name: Run ESLint
         run: npx eslint -c eslint.config.js .
-
 
   e2e:
     runs-on: ubuntu-latest
